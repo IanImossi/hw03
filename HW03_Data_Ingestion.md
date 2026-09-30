@@ -171,8 +171,8 @@ For the same company and quarter you checked in 5A, use `yfinance` (from ICE 5.1
 
 | Metric | From 8-K text extraction | From yfinance | Match? |
 |---|---|---|---|
-| Revenue | | | |
-| Net Income | | | |
+| Revenue | $109.4 billion | $109.42B | Yes |
+| Net Income |  $29.79 billion |$29.79B | Yes |
 
 If the two sources disagree, explain the most likely reason (period mismatch, metric definition difference, or extraction error).
 
@@ -182,10 +182,10 @@ Complete this table:
 
 | Check | Expected | Actual | Pass/Fail |
 |---|---|---|---|
-| `earnings_history.csv` row count | Up to 20 (5 companies × 4 quarters) | | |
-| `executive_events.csv` row count | At least 0 (document actual) | | |
-| `corporate_events_timeline.csv` created | Yes | | |
-| Rows with all three fields `"NOT_FOUND"` | 0 (investigate if > 0) | | |
+| `earnings_history.csv` row count | Up to 20 (5 companies × 4 quarters) | 20 | Pass |
+| `executive_events.csv` row count | At least 0 (document actual) | 33 | Pass |
+| `corporate_events_timeline.csv` created | Yes | Yes | Pass|
+| Rows with all three fields `"NOT_FOUND"` | 0 (investigate if > 0) | 0 | Pass |
 
 ---
 
